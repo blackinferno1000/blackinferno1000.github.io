@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(136, 136, 136);
+    }
+    #fm{
+      text-align: center;
+      color: black;
+    }
+    #nav{
+      box-shadow: 0px 2px rgb(130, 130, 130);
+  }
+  #nav a{
+    color: black;
+  }
+  #about{
+    background-color: rgb(255,0,0);
+    padding: 20px 0px 20px 10px;
+    margin-top: 60px;
+  }
+  #projects{
+    background-color: rgb(204, 0, 0);
+    padding: 20px 0px 20px 0px;
+  }
+  #projects p{
+    color: black;
+    text-align: center;
+  }
+  #contact{
+    background-color: rgb(180, 38, 38);
+    padding: 20px 0px 20px 0px;
+  }
+  #about p{
+    font-size:25px;
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+  }
+  #pic{
+  height: 300px;
+  width:350px;
+  }

@@ -1,12 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Site</title>
+  <meta charset="utf-8">
+  <title>Portfolio Site</title>
+  <link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <h1>Hello World</h1>
+  <header class="container">
+    <!--nav bar-->
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">CodeVagabond</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--About Me section-->
+  <div id="about" class="container jumbotron">
+    <div class="col-lg-4 col-sm-4">
+      <img id="pic" class="img-circle img-responsive" src="portrait.jpg" alt="picture of me">
+    </div>
+    <div class="col-lg-8 col-sm-8">
+      <p>Hello, I'm Sean Lightfoot. I'm a student at Rochester Institute of Technology in the New Media Interactive Development program.<br><br>Experience in C#, HTML, CSS, Javascript, JQuery, Reactjs, and React Native.</p>
+    </div>
+  </div>
+  <!--Projects section-->
+  <div id="projects" class="container jumbotron">
+
+    <p>Current Projects:</p>
+
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+
+    <p>Completed Projects:</p>
+
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
+      </div>
+    </div>
+  </div>
+  <!--Contact Section-->
+  <footer id="contact" class="container jumbotron">
+    <div id="fm" class="container">
+      <p>If you liked anything you saw or would like to contact me fill out the form:</p>
+      <!--Form to contact me-->
+      <form>
+        <label>Name:</label>
+        <input type="name" placeholder="Name" required>
+        <br>
+        <label>Email:</label>
+        <input type="email" placeholder="abc123@gmail.com" required>
+        <br>
+        <label>Phone Number:</label>
+        <input type="text" placeholder="012345678910" required>
+        <br>
+        <textarea rows="10" cols="50">Enter in a message and I will contact you back. </textarea>
+        <br>
+        <button style="color: grey;" type="submit">Submit</button>
+      </form>
+    </div>
+    <!--     <p>Email: seanalexnder360@gmail.com</p>
+    <p>Github: https://github.com/blackinferno1000</p>
+-->
+  </footer>
 </body>
+
 </html>

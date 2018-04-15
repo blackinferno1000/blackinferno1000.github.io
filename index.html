@@ -1,116 +1,318 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Portfolio Site</title>
-  <link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Roboto" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 
 <body>
-  <header class="container">
-    <!--nav bar-->
-    <nav id="nav" class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand">CodeVagabond</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CodeVagabond</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="navbar-nav ">
+                <a class="nav-item nav-link" href="#about">About
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="#skills1">Skills</a>
+                <a class="nav-item nav-link" href="#projects">Projects</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
     </nav>
-  </header>
-  <!--About Me section-->
-  <div id="about" class="container jumbotron">
-    <div class="col-lg-4 col-sm-4">
-      <img id="pic" class="img-circle img-responsive" src="portrait.jpg" alt="picture of me">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Web and Mobile developer seeking an internship opportunity</h1>
+            <hr class="my-8">
+            <p class="lead text-center">Welcome to my Portfolio site. Here you will find some of my Web and Mobile development work.</p>
+        </div>
     </div>
-    <div class="col-lg-8 col-sm-8">
-      <p>Hello, I'm Sean Lightfoot. I'm a student at Rochester Institute of Technology in the New Media Interactive Development program.<br><br>Experience in C#, HTML, CSS, Javascript, JQuery, Reactjs, and React Native.</p>
-    </div>
-  </div>
-  <!--Projects section-->
-  <div id="projects" class="container jumbotron">
+    <div class="container-fluid">
+        <h2>About Me</h2>
+        <div id="about" class="row">
+            <div class="col">
+                <div class="">
+                    <img id="profile" src="./media/portrait.jpg" class="rounded" alt="me">
+                </div>
+            </div>
+            <div class="col">
+                <div id="bio">
+                    <p class="text-dark">I'm Sean Lightfoot, I'm from Chicago, Il. I attend RIT pursuing a degree in the NMID program. I love to design, create,
+                        and code. I have a passion for learning new technologies and creating with them.</p>
+                    <p class="text-dark"> I hope to continue refining my skills and work on exciting projects that both challenge and intrigue
+                        me. My skill base is in web work but in my free time I do projects in mobile work.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="resume" class="row">
+            <a href="Sean-Lightfoot-Resume.pdf" class="btn btn-lg btn-block btn-outline-success">Resume</a>
+        </div>
+        <h2>Skills</h2>
+        <div id="skills1" class="row skills">
+            <i class="devicon-html5-plain-wordmark colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <i class="devicon-javascript-plain colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div id="skills2" class="row skills">
+            <i class="devicon-css3-plain-wordmark colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <i class="devicon-php-plain colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div id="skills3" class="row skills">
+            <i class="devicon-csharp-plain colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <i class="devicon-bootstrap-plain-wordmark colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div id="skills4" class="row skills">
+            <i class="devicon-git-plain-wordmark colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <i class="devicon-illustrator-line colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div id="skills5" class="row skills">
+            <i class="devicon-photoshop-line colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <i class="devicon-visualstudio-plain-wordmark colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div id="skills6" class="row skills">
+            <i class="devicon-slack-plain-wordmark colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <i class="devicon-jquery-plain-wordmark colored" style="font-size: 75px;"></i>
+            <div class="col align-self-center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <h2>Projects</h2>
+        <div id="projects" class="row">
+            <div class="col-sm-4">
+                <div class="card border border-secondary text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Anime Finder</h5>
+                        <a href="#" class="" data-toggle="modal" data-target="#animeModal">
+                            <img class="card-img-top" src="./media/anime.png" alt="anime">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card border border-secondary text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Pixel Artist</h5>
+                        <a href="#" class="" data-toggle="modal" data-target="#pixelModal">
+                            <img class="card-img-top" src="./media/pixel.png" alt="pixel">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card border border-secondary text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Tribute Page</h5>
+                        <a href="#" class="" data-toggle="modal" data-target="#tributeModal">
+                            <img class="card-img-top" src="./media/tribute.png" alt="tribute">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Contact</h2>
+        <div id="contact" class="row justify-content-center text-center">
+            <div class="col-md-8 align-self-center">
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="colFormLabel" placeholder="someone@gmail.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
 
-    <p>Current Projects:</p>
+    </div>
+    <footer class="bg-dark text-center text-white">
+        <p> Copyright &copy; 2018 Sean Lightfoot </p>
+        <p class="text-uppercase">check out my Github.</p>
+        <a href="https://github.com/blackinferno1000">
+            <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+        </a>
+    </footer>
+    <div class="modal fade" id="animeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Anime Finder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
 
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
+                </div>
+                <div class="modal-body">
+                    <img src="./media/anime.png" style="width: 100%;" alt="">
+                    <p class="top">Web service built with the Kitsu API. Used to find information and potential reviews for an anime.
+                    </p>
+                    <p>This project gave me insight into working with APIs and creating useful and dynamic content with them.
+                        I also experimented with webstorage in this project.
+                    </p>
+                    <p>Technologies used: HTML, CSS, Javascript, APIs, Materialize</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://people.rit.edu/sal6961/230/AnimeFinder/" class="btn btn-primary">Find it here</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
+    <div class="modal fade" id="pixelModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pixel Artist</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <img src="./media/pixel.png" style="width: 100%;" alt="">
+                    <p class="top">Web application that allows the user to do simple pixel art in the DOM. Features multiple colors and
+                        drag to color.
+                    </p>
+                    <p>Working on this helped me understand working with the DOM in an 
+                        entirely different way. 
+                    </p>
+                    <p>Technologies used: HTML, CSS, Javascript</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://people.rit.edu/sal6961/230/Pixel-Artist/pixel-artist-HW.html" class="btn btn-primary">Find it here</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
+    <div class="modal fade" id="tributeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Tribute Page</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <img src="./media/tribute.png" style="width: 100%;" alt="">
+                    <p class="top">Tribute page to Midoriya Izuku from My Hero Academia. Includes synopsis and a link to more information.
+                    </p>
+                    <p>This was an assignment from FreeCodeCamp I did in my free time 
+                        to experiment with the CSS Framework bootstrap some time ago.
+                        This helped me understand how CSS frameworks work and how to manipulate 
+                        them to make appealing web pages.
+                    </p>
+                    <p>Technologies used: HTML, CSS, Bootstrap</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://people.rit.edu/~sal6961/230/Tribute-Page/tribute%20page.html" class="btn btn-primary">Find it here</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <p>Completed Projects:</p>
-
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="thumbnail">
-        <a href="#"><img src="https://vignette2.wikia.nocookie.net/beware-thebatman/images/a/a9/Tba.png/revision/latest?cb=20121201224308"></a>
-      </div>
-    </div>
-  </div>
-  <!--Contact Section-->
-  <footer id="contact" class="container jumbotron">
-    <div id="fm" class="container">
-      <p>If you liked anything you saw or would like to contact me fill out the form:</p>
-      <!--Form to contact me-->
-      <form>
-        <label>Name:</label>
-        <input type="name" placeholder="Name" required>
-        <br>
-        <label>Email:</label>
-        <input type="email" placeholder="abc123@gmail.com" required>
-        <br>
-        <label>Phone Number:</label>
-        <input type="text" placeholder="012345678910" required>
-        <br>
-        <textarea rows="10" cols="50">Enter in a message and I will contact you back. </textarea>
-        <br>
-        <button style="color: grey;" type="submit">Submit</button>
-      </form>
-    </div>
-    <!--     <p>Email: seanalexnder360@gmail.com</p>
-    <p>Github: https://github.com/blackinferno1000</p>
--->
-  </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+    </script>
 </body>
 
 </html>
